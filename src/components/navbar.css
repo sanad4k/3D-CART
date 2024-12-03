@@ -10,11 +10,27 @@
     /* opacity:70%; */
     
 }
-
-.brand a {
-    color: white;
-    text-decoration: none;
-    font-size: 45px;
+.brand{
+    display: flex;
+    justify-content: space-between; /* Adjusts spacing between items */
+   
+    align-items: center; /* Aligns items vertically */
+    padding: 10px; /* Optional: adds spacing inside the container */
+   
+}
+/* .brand a {
+    
+} */
+.BRANDNAME{
+    color: aliceblue;
+    font-size: medium;
+    padding-right: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+.BRANDNAME:hover{
+    scale:1.1;
 }
 
 .toggler{
@@ -33,6 +49,7 @@
 
 }
 
+
 .menuItems a {
     font-size: medium;
     color: white;
@@ -43,9 +60,9 @@
 }
 
 .logo_image{
-    margin-left:40px;
+    margin-left:10px;
     opacity: 100%;
-    width:110px;
+    width:50px;
     height:100%;
     object-fit: cover;
     transition: 0.3s;
@@ -53,6 +70,7 @@
 .logo_image:hover{
     transform: scale(1.2);
 }
+
 
 /* Mobile view */
 @media (max-width: 768px) {

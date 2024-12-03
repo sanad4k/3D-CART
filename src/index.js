@@ -1,13 +1,40 @@
+import './index.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { createBrowserRouter , RouterProvider } from 'react-router-dom';
+import CardList from './pages/App';
+import About from './pages/About';
+import Dashboard from './pages/Dashboard';
+import Profile from './pages/Profile';
 import reportWebVitals from './reportWebVitals';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// ReactDOM.createRoot(document.getElementById(('root')!)
+
+const router= createBrowserRouter([
+  { path:'/',
+    element:<CardList/>
+  },
+  {
+    path:'/about',
+    element:<About/>
+  },
+  {
+    path:'/Dashboard',
+    element:<Dashboard/>
+  },
+  {
+    path:'/Profile',
+    element:<Profile/>
+  }
+
+])
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
+    
   </React.StrictMode>
 );
 

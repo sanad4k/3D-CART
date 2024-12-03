@@ -13,10 +13,10 @@
 
 .card:hover {
   transform: scale(1.05); /* Scale up card on hover */
-  border: 1px solid rgb(255, 72, 0);
+  border: 1px solid rgb(0, 65, 126);
 }
 .card:hover .title{
-  color:rgb(255, 72, 0)
+  color:rgb(0, 75, 105)
 
 }
 
@@ -47,13 +47,14 @@
   display: block;
 }
 
-.details1  {
-  font-size: 14px; /* Smaller font size for details */
+
+.details2{
+font-size: 17px; /* Smaller font size for details */
   font-weight: normal; /* Normal font weight */
   color: #666; /* Lighter gray color for details */
 }
-.details2{
-font-size: 14px; /* Smaller font size for details */
-  font-weight: normal; /* Normal font weight */
-  color: #666; /* Lighter gray color for details */
+.price .artist{
+  font-weight: bolder;
+  font-size: 18px;
+
 }
