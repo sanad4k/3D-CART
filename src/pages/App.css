@@ -5,6 +5,21 @@
   flex-wrap: wrap;
   max-width: 1500px;
   gap: 15px;
+  margin: auto;
+}
+.card_name{
+  color: black;
+}
+.card{
+  text-align: center;
+  height:303.25px;
+}
+
+.card_price{
+  color: black;
+}
+.card_artist{
+  color: black;
 }
 .modeselector{
   display: flex;
@@ -25,6 +40,9 @@
   color:white;
   scale: 1.15;
 
+}
+.black{
+  color:black;
 }
 .card {
   cursor: pointer;
@@ -93,6 +111,10 @@
   border-radius: 50%;
   transition: background-color 0.3s ease;
 }
+.card_spacing{
+  margin:0;
+  padding:10px;
+}
 
 .close-button:hover {
   background-color: #d32f2f;
@@ -105,8 +127,8 @@
   transition:0.3s
 }
 .buybutton:hover{
-  background-color: blue;
-  color:red;
+  background-color: rgb(34, 34, 97);
+  color:rgb(38, 97, 173);
   scale: 1.05;
 }
 @media (max-width: 768px){

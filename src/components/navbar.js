@@ -12,7 +12,7 @@ const Navbar = ()=>{
     return(
         <nav className='navbar'>
             <div className='brand'>
-                <Link className='BRANDNAME' to='#'><img alt='logo' src='logo.png' className='logo_image'/></Link>
+                <Link className='BRANDNAME' to='/'><img alt='logo' src='logo.png' className='logo_image'/></Link>
                 {/* <a to='#' className='brandName'>twu</a> */}
                 <Link to='/' className='BRANDNAME'>3D CART</Link>
                 
@@ -20,8 +20,7 @@ const Navbar = ()=>{
             <div className={`menuItems ${open ? 'open' : ''}`}>
                 <Link to='/'>EXPLORE</Link>
                 <Link to='#'>LIBRARY</Link>
-                <Link to='/Profile'>PROFILE</Link>
-                <Link to='#'>PUBLISHES</Link>
+                <a href='https://protfoliofortrial.vercel.app/'>PROFILE</a>
                 <Link to='/Dashboard'>DASHBOARD</Link>
                 <Link to='/About'>ABOUT US</Link>
             </div>

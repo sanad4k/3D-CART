@@ -19,7 +19,7 @@ const Dashboard = () => {
             <div className="floater">
                 <div className="dashboard">
                     <div className="profile-card">
-                        <div className="profile-image"></div>
+                        <div className="profile-image"><img src="/photos/picd.jpg"/></div>
                         <h2>Jeremy Robson</h2>
                         <p>3D Artist Dashboard</p>
 

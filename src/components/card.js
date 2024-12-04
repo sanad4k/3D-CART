@@ -9,7 +9,7 @@ const Card = ({ src , name , price , category , artist}) => {
             </div>
             <div className="text_box">
                 <div className="title">{name}</div>
-                <div className="details2">type: {category}</div>
+                <div className="category">type: {category}</div>
                 <div className="artist">by: {artist}</div>
                 <div className="price">{price}</div>
                 <br/>   
