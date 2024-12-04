@@ -109,3 +109,13 @@
   color:red;
   scale: 1.05;
 }
+@media (max-width: 768px){
+  .modeselector{
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    
+  }
+ 
+  
+}

@@ -10,6 +10,11 @@
     /* opacity:70%; */
     
 }
+.positioning{
+    
+    right: 5px;
+    top:5px;
+}
 .brand{
     display: flex;
     justify-content: space-between; /* Adjusts spacing between items */
@@ -76,12 +81,18 @@
 @media (max-width: 768px) {
     .toggler{
         display:inline;
+        position:absolute;
+        top: 23px;
+        right: 20px;
         
         
     }
     .toggle_clr{
 
-        color:rgb(255, 72, 0)
+        color:rgb(255, 72, 0);
+        position:absolute;
+        top: 23px;
+        right: 20px;
     }
     .menuItems {
         display: none;

@@ -1,83 +1,131 @@
-/* Container for the Dashboard page */
-.dashboard-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    text-align: center;
-  }
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #0d1117;
+  color: white;
+}
+.floater{
+  /* position:absolute;
+  top:35%; */
   
-  /* Section styling */
-  .dashboard-section {
-    margin-bottom: 30px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard {
+
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  width: 100%;
+}
+
+.profile-card {
+  width: 800px;
+  background-color: #1e1e2f;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  height: auto;
+}
+
+.profile-card .profile-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 auto 20px;
+}
+
+.profile-card h2 {
+  margin: 0;
+}
+
+.profile-card p {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.view-options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.view-options button {
+  background: none;
+  border: 1px solid #b3b3b3;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-options button.active {
+  background-color: #4caf50;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.metric-card {
+  background-color: #1e1e2f;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.metric-card h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #e8e8e8;
+}
+
+.metric-card .current {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.metric-card .last-week {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+.about{
+  font-size: large;
+  font-style: bold  ;
+}
+
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column; /* Stack everything vertically */
+    align-items: center;
+    max-width: 650px;
+    margin: 0;
+    margin-top: 10px;
+    padding:0
   }
-  
-  .dashboard-section h2 {
-    color: #222;
-    margin-bottom: 10px;
+
+  .profile-card {
+    width: 80%; /* Take full width on mobile */
+    margin-bottom: 20px;
+    /* padding: 5px; */
+    padding-top:5px ;
   }
-  
-  /* Button styling */
-  .dashboard-section button {
-    padding: 10px 15px;
-    font-size: 14px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .dashboard-section button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Graph section styling */
-  .graph-section {
-    margin-top: 50px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .graph-placeholder {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 200px;
-    margin-top: 20px;
-    border-top: 2px solid #ddd;
-  }
-  
-  .random-graph {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: 100%;
-  }
-  
-  .bar {
-    width: 30px;
-    background-color: #4CAF50;
-    margin: 0 5px;
-    display: inline-block;
-    transition: height 0.3s ease-in-out;
-  }
-  .animation:hover{
-    scale:1.05;
+
+  .metrics {
+    grid-template-columns: 1fr; /* Single column for metric cards */
+    width: 80%; /* Full width on mobile */
+    padding:5px;
 
   }
-  .animation{
-    transition: 0.3s;
+.metrics h3{
+  padding-top: 10px;
+}
+  .metric-card {
+    width: 100;
+    padding:0;
+    text-align: center;
   }
-  
+}

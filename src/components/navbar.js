@@ -14,18 +14,18 @@ const Navbar = ()=>{
             <div className='brand'>
                 <Link className='BRANDNAME' to='#'><img alt='logo' src='logo.png' className='logo_image'/></Link>
                 {/* <a to='#' className='brandName'>twu</a> */}
-                <div className='BRANDNAME'>3D CART</div>
+                <Link to='/' className='BRANDNAME'>3D CART</Link>
                 
             </div>
             <div className={`menuItems ${open ? 'open' : ''}`}>
                 <Link to='/'>EXPLORE</Link>
                 <Link to='#'>LIBRARY</Link>
-                <Link to='#'>PROFILE</Link>
+                <Link to='/Profile'>PROFILE</Link>
                 <Link to='#'>PUBLISHES</Link>
                 <Link to='/Dashboard'>DASHBOARD</Link>
                 <Link to='/About'>ABOUT US</Link>
             </div>
-            <button className={` ${open ? 'toggle_clr': 'toggler'}`} onClick={toggle}>☰</button>
+            <button  className={` ${open ? 'toggle_clr': 'toggler'} postioning`} onClick={toggle}>☰</button>
         </nav>
     )
 }
