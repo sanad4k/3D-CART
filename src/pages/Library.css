@@ -1,0 +1,13 @@
+.title3{
+    text-decoration: bold;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+.cont{
+    margin: auto;
+}

@@ -19,7 +19,7 @@ const Navbar = ()=>{
             </div>
             <div className={`menuItems ${open ? 'open' : ''}`}>
                 <Link to='/'>EXPLORE</Link>
-                <Link to='#'>LIBRARY</Link>
+                <Link to='/Library'>LIBRARY</Link>
                 <a href='https://protfoliofortrial.vercel.app/'>PROFILE</a>
                 <Link to='/Dashboard'>DASHBOARD</Link>
                 <Link to='/About'>ABOUT US</Link>

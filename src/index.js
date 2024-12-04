@@ -6,6 +6,7 @@ import { createBrowserRouter , RouterProvider } from 'react-router-dom';
 import CardList from './pages/App';
 import About from './pages/About';
 import Dashboard from './pages/Dashboard';
+import Library from './pages/Library'
 // import Profile from './pages/Profile';
 import reportWebVitals from './reportWebVitals';
 
@@ -24,6 +25,10 @@ const router= createBrowserRouter([
   {
     path:'/Dashboard',
     element:<Dashboard/>
+  },
+  {
+    path:'/Library',
+    element:<Library/>
   },
  
 ])
